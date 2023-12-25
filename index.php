@@ -42,3 +42,21 @@ $w = mysqli_fetch_all($budget);
       }
     ?>
   </table>
+  <h2>Добавить нового сотрудника для картриджа</h2>
+  <form action="vendor/create.php" method="post">
+    <p>Фамилия</p>
+    <textarea name="name"></textarea>
+    <p>Имя</p>
+    <input type ="number" name= "videl">
+    <p>Отчество</p>
+    <input type="number" name="zatr">
+    <p>Номер картриджа</p>
+    <input type="number" name="ost">
+    <p>Номер принтера или МФУ</p>
+    <input type="number" name="dat">
+    <p>Комментарии и замечания по ходу выполнения (если требуются)</p>
+    <textarea name="text" name="comm"></textarea>
+    <button type="submit">Добавить</button>
+  </form>
+</body>
+</html>
